@@ -231,3 +231,6 @@ Cuando haya funcionado, verás los valores en le localhost como se muestra en la
 1. **PubSubClient**
 2. **ArduinoJson**
 3. **DHT sensor library for ESPx**
+
+### Desarrollado por 
+VICTOR EMANUEL CABAÑAS MONTES
