@@ -233,4 +233,4 @@ Cuando haya funcionado, verás los valores en le localhost como se muestra en la
 3. **DHT sensor library for ESPx**
 
 ### Desarrollado por 
-VICTOR EMANUEL CABAÑAS MONTES
+[VICTOR EMANUEL CABAÑAS MONTES](https://github.com/Victor-Cabanas-99)
