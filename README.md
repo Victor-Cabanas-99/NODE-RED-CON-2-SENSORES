@@ -172,11 +172,11 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ```
 2. Instalar la libreria de **ArduinoJson**, **PubSubClient** y **DHT sensor library for ESPx** como se muestra en la siguente imagen.
 
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20LIBRERIA.PNG?raw=true)
 
 3. Hacer la conexion del **HC-SR04 ULTRASONIC DISTANCE SENSOR** y el **DHT sensor library for ESPx** con la **ESP32** como se muestra en la siguente imagen.
 
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20CONEXCION.PNG?raw=true)
 
 4.- Abrimos la CMD como administrador, para ejecutar el Programa Node-red debemos escribir en el CMD: npm install -g --unsafe-perm node-red node-red
 
@@ -184,50 +184,50 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 6.- ejecutamos el CMD como administrador escribimos nslookup broker.emqx.io y copiamos el Address que nos genera.
 
-7.- una vez en node-red colocamos un bloque **mqqtt in** y configuramos el bloque con el puerto mqtt con el ip 35.172.255.228 como se muestra en la imagen.
-![]()
-![]()
+7.- una vez en node-red colocamos un bloque **mqqtt in** y configuramos el bloque con el puerto mqtt con el ip 3.76.79.164 como se muestra en la imagen.
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUE%20MQTT.PNG?raw=true)
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUE%20MQTT%20CONFIGURADO.PNG?raw=true)
 
 8.- Colocar el bloque **json** y configurarlo como se muestra en la imagen.
-![]()
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUE%20JSON.PNG?raw=true)
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUE%20JSON%20CONFIGURADO.PNG?raw=true)
 
 9.- Colocamos un bloque **Debug** para la comunicacion serial
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUE%20DEBUG.PNG?raw=true)
 
 10.- Colocamos tres bloques function (TEMPERATURA, HUMEDAD y DISTANCIA) y los configuramos con los siguentes codigos.
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUES%20DE%20FUNCION.PNG?raw=true)
 **TEMPERATURA**
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUES%20DE%20FUNCION%20confg.%201.PNG?raw=true)
 **HUMEDAD**
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUES%20DE%20FUNCION%20confg.%202.PNG?raw=true)
 **DISTANCIA**
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUES%20DE%20FUNCION%20confg.%203.PNG?raw=true)
 
 11.- Añadimo en el DASHBOARD tablas y 2 grupos para GRAFICAS e iNDICADORES 
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20TABLAS.PNG?raw=true)
 
 12.- Colocamos un bloque de chart y gauge para cada funcion para poder visualisar grafica como indicadores.
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20BLOQUES%20GRAFICAS.PNG?raw=true)
 
 13.- Colocamos la relciones en el NODE RED
-![]()
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20ACOMODO.PNG?raw=true)
 
 ### Instrucciónes de operación
-
-1. Iniciar simulador.
-2. Visualizar los datos en el monitor serial.
-3. Colocar la distancia *doble click* al sensor **HC-SR04 ULTRASONIC DISTANCE SENSOR**
-4. Colocar la temperatura y humedad *doble click* al sensor **DHT sensor library for ESPx**
-
+1.-Seleccionamos DEPLOY en node-red para iniciar la comunicacion.
+2.- Seleccionamos DASHBOARD en node-red.
+3.- Abrimos el localhost en el dashboard.
+4. Iniciar simulador.
+5. Visualizar los datos en el monitor serial del localhost para comprobar la conexcion.
+6. Colocar la distancia *doble click* al sensor **HC-SR04 ULTRASONIC DISTANCE SENSOR**
+7. Colocar la temperatura y humedad *doble click* al sensor **DHT sensor library for ESPx**
+8.-Visualizamos las graficas como los parametros.
 ## Resultados
 
-Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
-![](https://github.com/Victor-Cabanas-99/PRACTICA-DHT22-CON-ULTRASONICO-CON-LCD/blob/main/SENSOR%20ULTRASONICO%20CON%20DHT22%20Y%20LCD%20RESULTADO%201.PNG?raw=true)
-![](https://github.com/Victor-Cabanas-99/PRACTICA-DHT22-CON-ULTRASONICO-CON-LCD/blob/main/SENSOR%20ULTRASONICO%20CON%20DHT22%20Y%20LCD%20RESULTADO%202.PNG?raw=true)
-![](https://github.com/Victor-Cabanas-99/PRACTICA-DHT22-CON-ULTRASONICO-CON-LCD/blob/main/SENSOR%20ULTRASONICO%20CON%20DHT22%20Y%20LCD%20RESULTADO%203.PNG?raw=true)
-![](https://github.com/Victor-Cabanas-99/PRACTICA-DHT22-CON-ULTRASONICO-CON-LCD/blob/main/SENSOR%20ULTRASONICO%20CON%20DHT22%20Y%20LCD%20RESULTADO%204.PNG?raw=true)
+Cuando haya funcionado, verás los valores en le localhost como se muestra en la siguente imagen..
+![](https://github.com/Victor-Cabanas-99/NODE-RED-CON-2-SENSORES/blob/main/NODE%20RED%202%20SENESORES%20Graficos.PNG?raw=true)
 ## Librerías
 
-1. **LiquidCrystal I2C**
-2. **DHT sensor library for ESPx**
+1. **PubSubClient**
+2. **ArduinoJson**
+3. **DHT sensor library for ESPx**
